@@ -32,7 +32,7 @@ class skaiciuotuvas {
     // veiksmai vykdomi klases sukurimo viduje todel galima ir su private
     function __construct($sk1, $sk2, $veiksmas) {
         // kintamuju priskyrimas
-        $this->sk1=floatval($sk1); 
+        $this->sk1=floatval($sk1); // floatval- pakelia i realu skaiciu 
         $this->sk2=floatval($sk2); 
         $this->veiksmas=$veiksmas; 
 
@@ -60,8 +60,7 @@ class skaiciuotuvas {
                 $this->kelimasLaipsniu(); 
                 break;
             default:
-              echo "neteisingas veiksmas";     
-
+              echo "neteisingas veiksmas"; // po default break nebutina     
         }
 
         // konstruktorius turi paleisti visas funkcijas
