@@ -82,6 +82,7 @@ class skaiciuotuvas {
 
     private function suma() {
         $this->rezultatas= $this->sk1+$this->sk2; 
+        echo "<br>"; 
         echo "suma".":". $this->rezultatas; 
         echo "<br>"; 
     }
@@ -90,35 +91,30 @@ class skaiciuotuvas {
         $this->rezultatas= $this->sk1-$this->sk2;
         echo "skirtumas".":". $this->rezultatas; 
         echo "<br>"; 
-
     }
 
     private function daugyba() {
         $this->rezultatas= $this->sk1 * $this->sk2;
         echo "sandauga".":". $this->rezultatas;
         echo "<br>"; 
-
     }
 
     private function dalyba() {
         $this->rezultatas= $this->sk1 / $this->sk2;
         echo "dalybos rezultatas".":". $this->rezultatas;
         echo "<br>"; 
-
     }
     
     private function dalybaSuLiekana() {
         $this->rezultatas= $this->sk1 % $this->sk2;
         echo "dalyba su liekana".":". $this->rezultatas; 
         echo "<br>"; 
-
     }
 
     private function saknis() {
         $this->rezultatas= sqrt($this->sk1). ($this->sk2);
         echo "saknies istraukimas".":". $this->rezultatas; 
         echo "<br>"; 
-
     }
 
     private function kelimasLaipsniu () {
